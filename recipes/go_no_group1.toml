@@ -1,0 +1,78 @@
+# white is go, black is no
+
+# practice (same for all groups except color)
+[0]
+name = 'practice'
+t_max = {fun = 'criterion', kwargs = {values = [0.75], consecutive = 5}}
+timing_tol = 0.06
+color = 1
+
+[1]
+name = 'practice'
+t_max = {fun = 'criterion', kwargs = {values = [0.5], consecutive = 5}}
+timing_tol = 0.03
+color = 1
+
+# 6 go default
+[2]
+name = 'go_no'
+no_go_colors = [0, 1]
+file = 'tables/go_default_block1.csv'
+
+[3]
+name = 'go_no'
+no_go_colors = [0, 1]
+file = 'tables/go_default_block2.csv'
+
+[4]
+name = 'go_no'
+no_go_colors = [0, 1]
+file = 'tables/go_default_block3.csv'
+
+[5]
+name = 'go_no'
+no_go_colors = [0, 1]
+file = 'tables/go_default_block1.csv'
+
+[6]
+name = 'go_no'
+no_go_colors = [0, 1]
+file = 'tables/go_default_block2.csv'
+
+[7]
+name = 'go_no'
+no_go_colors = [0, 1]
+file = 'tables/go_default_block3.csv'
+
+# 6 no default
+[8]
+name = 'go_no'
+no_go_colors = [0, 1]
+file = 'tables/no_default_block1.csv'
+
+[9]
+name = 'go_no'
+no_go_colors = [0, 1]
+file = 'tables/no_default_block2.csv'
+
+[10]
+name = 'go_no'
+no_go_colors = [0, 1]
+file = 'tables/no_default_block3.csv'
+
+[11]
+name = 'go_no'
+no_go_colors = [0, 1]
+file = 'tables/no_default_block1.csv'
+
+[12]
+name = 'go_no'
+no_go_colors = [0, 1]
+file = 'tables/no_default_block2.csv'
+
+[13]
+name = 'go_no'
+no_go_colors = [0, 1]
+file = 'tables/no_default_block3.csv'
+
+
