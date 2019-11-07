@@ -1,6 +1,7 @@
 import numpy as np
 
 from gonogo.scenes.base_drop import BaseDrop
+from gonogo.constants import gray
 from mglg.graphics.shaders import FlatShader
 from mglg.graphics.shape2d import Square
 # animation
@@ -17,6 +18,7 @@ class GoNo(BaseDrop):
         super().__init__(win, block_handler, device, user_settings)
 
         flat_shader = FlatShader(win.context)
+        self.ball.fill_color = gray
 
         # hline position is determined by user_settings
         self.hline = Square(win.context, flat_shader, is_outlined=False,

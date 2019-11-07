@@ -48,4 +48,4 @@ install:
 build: off
 
 artifacts:
-  - path: dist/gonogo.zip
+  - path: gonogo.zip
