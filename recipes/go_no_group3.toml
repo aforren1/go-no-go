@@ -33,17 +33,17 @@ file = 'tables/go_default_block3.csv'
 [5]
 name = 'go_no'
 no_go_colors = [1, 0]
-file = 'tables/go_default_block1.csv'
+file = 'tables/go_default_block4.csv'
 
 [6]
 name = 'go_no'
 no_go_colors = [1, 0]
-file = 'tables/go_default_block2.csv'
+file = 'tables/go_default_block5.csv'
 
 [7]
 name = 'go_no'
 no_go_colors = [1, 0]
-file = 'tables/go_default_block3.csv'
+file = 'tables/go_default_block6.csv'
 
 # 6 no default
 [8]
@@ -64,16 +64,16 @@ file = 'tables/no_default_block3.csv'
 [11]
 name = 'go_no'
 no_go_colors = [1, 0]
-file = 'tables/no_default_block1.csv'
+file = 'tables/no_default_block4.csv'
 
 [12]
 name = 'go_no'
 no_go_colors = [1, 0]
-file = 'tables/no_default_block2.csv'
+file = 'tables/no_default_block5.csv'
 
 [13]
 name = 'go_no'
 no_go_colors = [1, 0]
-file = 'tables/no_default_block3.csv'
+file = 'tables/no_default_block6.csv'
 
 
