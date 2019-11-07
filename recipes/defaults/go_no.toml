@@ -1,0 +1,25 @@
+[go_no]
+initial = {fun = 'choice', kwargs = {options=[1, 0], probs=[0.5, 0.5], seed=1}}
+final = {fun = 'choice', kwargs = {options=[1, 0], probs=[0.3, 0.7], seed=1}}
+trials = 10
+
+# grayscale only, for now-- machinery in setup_trial only handles scalars
+no_go_colors = [0, 1] # [no_color, go_color]; to reverse mapping, swap the numbers
+
+# calc speed
+y_ball = 0.4
+y_line = -0.3
+t_max = 0.5
+
+# other time-related settings
+t_pretrial = 0.2 # dead time (visuals reset, but nothing moving)
+t_windup = 0.1 # active lead-in, e.g. ball squishes
+# ball starts moving after (t_pretrial + t_windup)
+
+# preparation time, i.e. this much time before t_max
+# is when the ball changes (usually overwritten)
+# so the change happens at t_max - t_prep
+t_prep = {fun = 'uniform', kwargs = {low=0.05, high=0.5, seed=1}}
+t_feedback = 0.3 # how long feedback is visible for
+# we'll go to feedback once t_max + 2*timing_tol has passed
+timing_tol = 0.03 # +/- allowed for making a response

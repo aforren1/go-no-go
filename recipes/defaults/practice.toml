@@ -1,0 +1,22 @@
+[practice]
+t_max = {fun = 'criterion', kwargs = {values = [0.5], consecutive = 6}}
+
+# calc speed
+y_ball = 0.4
+y_line = -0.3
+
+# other time-related settings
+t_pretrial = 0.5 # dead time (visuals reset, but nothing moving)
+t_windup = 0.1 # active lead-in, e.g. ball squishes
+# ball starts moving after (t_pretrial + t_windup)
+
+# preparation time, i.e. this much time before t_max
+# is when the ball changes (usually overwritten)
+# so the change happens at t_max - t_prep
+t_feedback = 0.5 # how long feedback is visible for
+# we'll go to feedback once t_max + 2*timing_tol has passed
+timing_tol = 0.03 # +/- allowed for making a response
+t_prep = 0.5
+trials = 200
+
+ball_color = 1

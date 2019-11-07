@@ -1,0 +1,3 @@
+[submodule "mglg"]
+	path = mglg
+	url = https://github.com/aforren1/mglg

@@ -1,0 +1,2 @@
+recursive-include mglg *.frag
+recursive-include mglg *.vert

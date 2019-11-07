@@ -1,0 +1,13 @@
+setuptools # find internal non-py package files (e.g. .ttf, .png, ...)
+numpy # general numeric work, random number generator
+pillow # image import
+pyglet==1.4.2 # until we switch to GLFW
+pynput # keyboard input
+toon>=0.12.7 # input polling & animation
+hidapi # device commmunication (primary)
+pyserial # device communication (secondary)
+imgui>=1.0.0 # in-game gui
+pyopengl # supports pyimgui
+moderngl==5.5.2 # TODO: def update when possible, nice new changes
+mglg # 2D graphics made by ADF; TODO: not on PyPI, so either publish or embed
+psychtoolbox # currently only from pip install -f https://github.com/aforren1/ptb-wheels/releases psychtoolbox

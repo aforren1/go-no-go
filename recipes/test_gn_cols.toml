@@ -1,0 +1,11 @@
+[a]
+name = 'practice'
+ball_color = 0
+
+[1]
+name = 'go_no'
+no_go_colors = [1, 0]
+
+[2]
+name = 'go_no'
+no_go_colors = [0, 1]

@@ -1,0 +1,17 @@
+gonogo/scenes/data/
+*.lprof
+*.egg-info/
+*.AppImage/
+*.AppImage
+*.pdf
+*.pyc
+.vscode/
+__pycache__/
+*.tar.gz
+data/
+build/
+dist/
+*.spec
+*.zip
+imgui.ini
+
