@@ -42,7 +42,7 @@ class GoNo(BaseDrop):
                 any_pressed = (data_stack.buttons > 0).any()
             else:
                 any_pressed = any(data_stack.press)
-        if data_stack.any() and any_pressed:
+        if data_stack.any() and any_pressed:  # any response made
             if is_custom_device:
                 index_max_per_button = np.argmax(data_stack.buttons, axis=0)
                 # we want the smallest non-zero value
@@ -69,24 +69,24 @@ class GoNo(BaseDrop):
             ub = current_settings['t_max'] + current_settings['timing_tol']
             good_timing = press_time >= lb and press_time <= ub
             trial_player.advance(t_start + press_time + t_delay)
+            correct_choice = False
+            if is_go:
+                correct_choice = True
             if good_timing and is_go:
                 self.ball.visible = False
                 self.particle_burst.visible = True
                 self.particle_burst.position = self.ball.position.copy()
                 self.check.visible = True
-                correct_choice = True
             elif good_timing:  # pressed on a no-go, but good timing
                 self.ball.visible = False
                 self.ball2.visible = True
                 self.ball2.position = self.ball.position.copy()
                 self.ball2.fill_color.xyz = final_color
                 self.x.visible = True
-                correct_choice = False
             else:  # pressed on a no-go, not good timing
                 self.shadow.visible = True
                 self.shadow.position = self.ball.position.copy()
                 self.x.visible = True
-                correct_choice = False
         else:  # no response
             good_timing = True  # well, not quite true?
             press_time = -1
