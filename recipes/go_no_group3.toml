@@ -6,13 +6,13 @@
 name = 'practice'
 t_max = {fun = 'criterion', kwargs = {values = [0.75], consecutive = 5}}
 timing_tol = 0.06
-color = 0
+ball_color = 0
 
 [1]
 name = 'practice'
 t_max = {fun = 'criterion', kwargs = {values = [0.5], consecutive = 5}}
 timing_tol = 0.03
-color = 0
+ball_color = 0
 
 # 6 go default
 [2]
