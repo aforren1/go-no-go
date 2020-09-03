@@ -212,7 +212,6 @@ class BaseDrop(Block):
         while trial_player.is_playing:
             # read data
             #t0 = default_timer()
-            print(self.ball.fill_color)
             data = device.read()
             data_list.append(data.copy())
             if data.any():
