@@ -14,4 +14,4 @@ dist/
 *.spec
 *.zip
 imgui.ini
-
+env/

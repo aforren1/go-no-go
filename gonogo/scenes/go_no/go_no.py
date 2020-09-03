@@ -18,7 +18,7 @@ class GoNo(BaseDrop):
         super().__init__(win, block_handler, device, user_settings)
 
         flat_shader = FlatShader(win.context)
-        self.ball.fill_color = gray
+        # self.ball.fill_color = gray
 
         # hline position is determined by user_settings
         self.hline = Square(win.context, flat_shader, is_outlined=False,
@@ -132,6 +132,7 @@ class GoNo(BaseDrop):
         final_state = next_settings['final']
         initial_color = next_settings['no_go_colors'][initial_state]
         final_color = next_settings['no_go_colors'][final_state]
+        self.ball.fill_color.rgb = initial_color
         ball_color = [(0, initial_color), (t_waiting, initial_color),
                       (t_waiting + (t_max - t_prep), final_color)]
         ball_color = Track(ball_color, interpolator=select)

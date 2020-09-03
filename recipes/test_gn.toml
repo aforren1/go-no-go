@@ -1,0 +1,4 @@
+[1]
+name = 'go_no'
+no_go_colors = [0, 1]
+t_prep = 0.25
